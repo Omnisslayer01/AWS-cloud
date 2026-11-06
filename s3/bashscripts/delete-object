@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+if [ -z "$1" ]; then
+    echo "Enter the Bucket name"
+    exit 1
+fi
+
+if [ -z "$2" ]; then
+    echo "Enter file name/key"
+    exit 1
+fi
+
+
+bucket_name=$1
+key=$2
+
+aws s3api delete-object --bucket $bucket_name --key $key 
