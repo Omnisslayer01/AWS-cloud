@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+#https://docs.aws.amazon.com/cli/latest/reference/cloudformation/deploy.html#:~:text=To%20deploy%20a%20template%20to%20a%20stack,tags%20Key1%3DValue1%20Key2%3DValue2
+aws cloudformation deploy \
+    --template-file template.yaml \
+    --region ap-south-1 \
+    --no-execute-changeset \
+    --stack-name Omnisslayer01-stack 

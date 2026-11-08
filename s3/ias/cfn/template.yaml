@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09' #https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-general.html#:~:text=AWSTemplateFormatVersion%3A%20%272010%2D09%2D09%27
+Description: "Deploying a S3 Bucket"
+Resources:
+  S3Bucket:
+    #https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: "hellobabewouldyouliketolearncfn"
+    # We dont need to supply a bucket name as AWS does the naming by itself but i am naming it because i can
